@@ -1,6 +1,5 @@
 * Introduction
 This program implemented a sentence compression parser, based on the method proposed by Ryan McDonald.
-We use maven to organize code.
 
 * Program Organization
 ** CompressionParser/
@@ -16,19 +15,19 @@ We use maven to organize code.
     This program depends on "trove.jar", and we use 2.0.2 version.
 
 * Compile Code
-    We use maven organize our code, you simply change to CompressionParser and then type:
-        mvn package
+We use maven organize our code, you simply change to the project directory  and then type:
+    mvn package
 
-    After above process, you will get a SCParser-1.0.jar in the "target" directory.
+After above process, you will get a SCParser-1.0.jar in the "target" directory.
 
 * Usage Example
-    Following process, we assume you are in the CompressionParser directory.
+Following process, we assume you are in the CompressionParser directory.
 
-    1. Train
-    java -cp target/SCParser-1.0.jar:target/dependency/trove4j-2.0.2.jar CompressionParser -train -t 10 -k 10
+1. Train
+java -cp target/SCParser-1.0.jar:target/dependency/trove4j-2.0.2.jar CompressionParser -train -t 10 -k 10
 
-    2. Test
-    java -cp target/SCParser-1.0.jar:target/dependency/trove4j-2.0.2.jar CompressionParser -test -k 10
+2. Test
+java -cp target/SCParser-1.0.jar:target/dependency/trove4j-2.0.2.jar CompressionParser -test -k 10
 
 * Reference
 [1]. Discriminative Sentence Compression with Soft Syntactic Evidence. Ryan McDonald.
